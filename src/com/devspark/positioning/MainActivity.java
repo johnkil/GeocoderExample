@@ -20,6 +20,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * 
@@ -56,6 +57,11 @@ public class MainActivity extends Activity {
 				new SearchTask().execute(new String[] {edit.getText().toString()});
 			}
 		});
+        
+        if (!Geocoder.isPresent()) {
+        	searchBtn.setEnabled(false);
+        	Toast.makeText(this, "Geocoder methods getFromLocation and getFromLocationName are not implemented", Toast.LENGTH_LONG).show();
+        }
     }
     
     private class SearchTask extends AsyncTask<String, Void, List<Address>> {
