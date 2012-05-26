@@ -27,4 +27,4 @@ License
     See the License for the specific language governing permissions and
     limitations under the License.
 
-[1]: http://s18.postimage.org/9s9kehceh/device_2012_05_16_015536.png
+[1]: http://s2.ipicture.ru/uploads/20120526/Lc7x6fnz.png
